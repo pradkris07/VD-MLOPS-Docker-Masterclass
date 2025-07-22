@@ -1,0 +1,19 @@
+Install Docker Desktop
+Sign in into dockerhub and docker Desktop
+
+Docker Desktop:
+i) Check Docker install: go to cli and type "docker"
+ii) Pull the hello world image and run it. Command available in the dockerhub site
+
+Create the app.py - here it is a Flask file
+Create the requirements.txt using PIP Freeze Command
+Add a new file "dockerfile" and add the docker commands required.
+
+Build docker image: docker build -t pradeep-docker-demo .
+Run the container: docker run -p 5000:5000 pradeep-docker-demo
+Tag the image: tag pradeep-docker-demo pradkris07/pradeep-docker-demo:first1
+Assure you are logged into the docker
+Push image to dockerhub : docker push pradkris07/pradeep-docker-demo:first1
+Pull image from dockerhub : docker pull pradkris07/pradeep-docker-demo:first1
+Run the pulled image: docker run -p 5000:5000 pradkris07/pradeep-docker-demo:first1
+
